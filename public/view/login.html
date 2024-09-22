@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/login.css">
+   <script src="https://kit.fontawesome.com/05136df295.js" crossorigin="anonymous"></script>
+   <title> connection </title>
+
+</head>
+
+<body>
+
+   <nav>
+      <div class="nav_container">
+         <div class="logo">
+            <a href="#home">
+               <i class="fa-solid fa-house"></i>Home
+            </a>
+         </div>
+         <ul class="nav_links">
+            <li>
+               <a href="/login">
+                  <i class="fa-solid fa-lock-open"></i> Login
+               </a>
+            </li>
+            <li>
+               <a href="/register">
+                  <i class="fa-solid fa-address-card"></i> Registration
+               </a>
+            </li>
+         </ul>
+      </div>
+
+   </nav>
+
+
+   <h1> connection </h1>
+   <div class="container_login">
+      <form action="user/login" method="POST" id="login_form">
+
+         <div>
+            <label for="login_email">email :</label>
+            <input type="email" name="email" id="login_email" placeholder=" Enter your email" required>
+         </div>
+         <div>
+            <label for="login_password"> Password</label>
+            <input type="password" name="password" id="login_password" placeholder="enter your password">
+         </div>
+
+         <button type="submit"> connection</button>
+
+
+      </form>
+      <div id="loginStatusMessage"></div>
+
+   </div>
+   <script src="../js/login.js"></script>
+</body>
+
+</html>

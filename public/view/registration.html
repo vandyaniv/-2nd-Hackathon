@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/registration.css">
+   <script src="https://kit.fontawesome.com/05136df295.js" crossorigin="anonymous"></script>
+
+   <title>registration </title>
+
+</head>
+
+<body>
+
+
+   <nav>
+      <div class="nav_container">
+         <div class="logo">
+            <a href="#home">
+               <i class="fa-solid fa-house"></i>Home
+            </a>
+         </div>
+         <ul class="nav_links">
+            <li>
+               <a href="/login">
+                  <i class="fa-solid fa-lock-open"></i> Login
+               </a>
+            </li>
+            <li>
+               <a href="/register">
+                  <i class="fa-solid fa-address-card"></i> Registration
+               </a>
+            </li>
+         </ul>
+      </div>
+
+   </nav>
+   <h1> registration</h1>
+   <div class="container_registration">
+      <form action="/register" method="POST" id="registration_form">
+         <div>
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name" placeholder="Enter your first name" required>
+         </div>
+
+         <div>
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Enter your last name" required>
+         </div>
+
+         <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+         </div>
+
+         <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+         </div>
+
+         <button type="submit">Register</button>
+
+      </form>
+      <div id="registrationStatusMessage"></div>
+
+   </div>
+   <script src="../js/registration.js"></script>
+
+</body>
+
+</html>
